@@ -11,3 +11,5 @@ REASON: Changing from Diamond bar to HCD
 	4. Modified GLOBAL CSS on ACA admin to customize backgrounds and fots to match the parent UI.
 
 	5. Changed global, login, account creation, disclaimer pages to match Agency names.
+
+	6. Cap/CapCompletion.aspx, is modified to prevent payment redirection. Added to version control.
