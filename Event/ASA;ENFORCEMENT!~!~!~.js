@@ -24,7 +24,7 @@ if(appTypeString=="Enforcement/Property Maintenance/Case/Project") {
 }
 if(appTypeString=="Enforcement/Property Maintenance/Case/Case") {
     // this is a new case for a property
-    scheduleInspection("New Complaint", 0, "SALES");
+    scheduleInspection("New Case", 0, "SALES");
     inspId = getScheduledInspId("New Complaint"); logDebug("inspId: " + inspId);
     // addGuideSheet(capId,inspId,"Property Maintenance");
     //autoScheduleInspection(capId,inspId,new Date());
