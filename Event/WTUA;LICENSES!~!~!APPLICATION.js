@@ -4,9 +4,10 @@ if(wfProcess == "LIC_APPLICATION_BUSINESS_INSPECTION" && isTaskStatusNull("Inspe
     isTaskStatus("Application Review", "Application Review Complete")){
     updateTask("Inspection Status","Pending Inspection Assignment", "Updated via script", "Updated via script");
 }
-if(wfStatus == "Additional Info Needed")
+if(wfStatus == "Additional Info Needed" || wfStatus == "Waiting for Information")
 {
-    deactivateTask("Planning Review");
+    //deactivateTask("Planning Review");
+    deactivateTask("Application Intake");
     //sendAppToACA4Edit();
     var capPeoples = aa.people.getCapContactByCapID(capId).getOutput();
     for (var x in capPeoples)
