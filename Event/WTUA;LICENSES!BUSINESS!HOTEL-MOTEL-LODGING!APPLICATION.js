@@ -13,7 +13,7 @@ try{
         var envParameters = aa.util.newHashMap();
         envParameters.put("capID",capId.getCustomID()+"");
         envParameters.put("emailTemplate","HCD_REGISTRATION_APPROVAL");
-        envParameters.put("reportName","HCD-Title Certificate");
+        envParameters.put("reportName","St Pete Building Permit");
         envParameters.put("type","issuance");
         aa.runAsyncScript("HCD_NOTIFICATIONS_ASYNC", envParameters);
     }
